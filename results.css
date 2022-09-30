@@ -1,0 +1,15 @@
+.results{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(3, 25, 25);
+    padding-top: 14vh;
+}
+.results h1{
+    color: white;
+}
+.results .marksheet{
+    height: 500px;
+    width: 80%;
+    background-color: black;
+    
+}

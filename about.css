@@ -1,0 +1,12 @@
+.aboutsection{
+
+    height: 100%;
+    width: 100%;
+    padding-top: 15vh;
+    background-color: rgb(3, 3, 28);
+    color: white;
+}
+.aboutsection h1{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

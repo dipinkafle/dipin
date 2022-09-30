@@ -1,0 +1,209 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.nav{
+    height: 13vh;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid black;
+    position: fixed;
+}
+.nav .navlinks{
+    height: 13vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav .navlinks a{
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+.nav .navlinks a:hover{
+    color: red;
+    transition: 2s;
+}
+.navformobile{
+    height: 100vh;
+    width: 100%;
+    padding-top: 13vh;
+}
+
+.navformobile .navlinks{
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(7, 16, 54);
+}
+.navformobile .navlinks a{
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+}
+#logo{
+    position: absolute;
+    mix-blend-mode: multiply;
+    overflow: hidden;
+    height: 13vh;
+}
+#navicon{
+    height: 13vh;
+    position: absolute;
+    mix-blend-mode: multiply;
+    display: none;
+
+}
+#international{
+    height: 13vh;
+    position: absolute;
+    right: 0.001%;
+    mix-blend-mode: multiply;
+}
+.header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(assets/background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.about{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color: rgb(245, 241, 241);
+    
+}
+.about video{
+    width: 40%;
+
+}
+.about .space{
+    width: 5%;
+}
+.about .discription{
+    width: 45%;
+}
+.about .discription h1{
+    color: rgb(14, 14, 58);
+    border-bottom: 1px solid grey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.about .discription h4{
+    border: 1px solid rgb(14, 14, 58);
+    width: 11ch;
+    padding: 5px;
+    background-color: rgb(14, 14, 58);
+    color: white;
+    font-family: cursive;
+}
+.testimonials{
+    height: 100%;
+    width: 100%;
+    background-image: url(assets/testimonials/testimonial.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 45px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonials .space{
+    width: 3%;
+}
+.testimonials .studentone{
+    height: 550px;
+    width: 30%;
+    border-top: 10px solid red;
+    border-top-left-radius: 4%;
+    border-top-right-radius: 4%;
+
+}
+.testimonials .studenttwo{
+    height: 550px;
+    width: 30%;
+    border-top: 10px solid yellow;
+    border-top-left-radius: 4%;
+    border-top-right-radius: 4%;
+}
+.testimonials .studentthree{
+    height: 550px;
+    width: 30%;
+    border-top: 10px solid blue;
+    border-top-left-radius: 4%;
+    border-top-right-radius: 4%;
+}
+.testimonials img{
+    width: 50%;
+}
+.footer{
+    height: 100%;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(2, 2, 18);
+}
+.footer .contact img{
+    width: 30%;
+}
+.footer .contact{
+    position: absolute;
+
+}
+.signature{
+    background-color: black;
+    color: rgba(255, 255, 255, 0.432);
+    
+}
+@media(max-width: 700px){
+    #navicon{
+        display: block;
+    }
+    .nav .navlinks{
+        display: none;
+    }
+    #logo{
+        display: none;
+    }
+    .about{
+        display: block;
+    }
+    .about video{
+        width: 100%;
+    }
+    .about .space{
+        height: 50px;
+        width: 100%;
+    }
+    .about .discription{
+        width: 100%;
+    }
+    .testimonials{
+        display: block;
+    }
+    .testimonials .studentone{
+        width: 100%;
+    }
+    .testimonials .studenttwo{
+        width: 100%;
+    }
+    .testimonials .studentthree{
+        width: 100%;
+    }
+    .footer .contact{
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%);
+        width: 55%;
+        position: relative;
+        justify-content: center;
+    }
+    
+}

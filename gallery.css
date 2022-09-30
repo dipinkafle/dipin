@@ -1,0 +1,15 @@
+.gallery{
+    height: 100%;
+    width: 100%;
+    padding-top: 14vh;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.913),rgb(2, 4, 14)),url(assets/background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.gallery img{
+    height: 200px;
+}
+.gallery img:hover{
+    transition: 1s;
+    height: 230px;
+}
