@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Converter</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .header{
+            width: 100%;
+            height: 10vh;
+            background-color: aqua;
+            border-bottom: 3px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(2, 5, 40);
+        }
+        .main{
+            width: 100%;
+            height: 89vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .main .center{
+            height: 33%;
+            width: 50%;
+            background-color: rgba(0, 0, 255, 0.564);
+            border: 3px solid green;
+        }
+        .footer{
+            height: 4vh;
+            width: 100%;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            bottom: 0.00001%;
+        }
+    </style>
+</head>
+<body>
+    <section class="header">
+        <h2>Marks Converter</h2>
+
+
+    </section>
+    <section class="main">
+        <div class="center">
+            <center><h3>Enter Marks Obtained in 100s</h3></center><br>
+            <center><input type="number" id="mark"></center><br>
+            <center><button id="calculate" onclick="converter()">Convert in 75 Percent</button></center> <br>
+            <center><div class="result" id="result" style="color: red; font-size: x-large;"></div></center><br>
+            <center><a href="index.html">Backtohome</a></center>
+
+        </div>
+    </section>
+    <section class="footer">&copy;All Right reserved by <a href="https//bishalkafle.info.np" style="text-decoration: none; color: red;">bishalkafleproduction</a></section>
+    
+</body>
+<script>
+    
+    function converter(){
+        var a = document.getElementById("mark").value;
+        var b = parseInt(a)*0.75;
+        document.getElementById("result").innerHTML = b;
+    }
+</script>
+</html>
